@@ -1,0 +1,248 @@
+/* For mobile */
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Josefin Sans' , sans-serif;
+    background: #F2F2F2;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    height: 800px;
+    background: linear-gradient(150.03deg, #FFFFFF 0%, #FFF4F4 84.51%);
+}
+
+.desktop {
+    display: none;
+}
+
+.mobile {
+    margin-top: 7%;
+}
+
+.logo {
+    width: 100px;
+    height: 21px;
+    margin: 32px 0 0 32px;
+}
+
+.card-content {
+    margin-left: 3%;
+    margin-top: 5%;
+}
+
+.title1 {
+    height: 42px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 10.8254px;
+    color: #CE9898;
+    text-transform: uppercase;
+    margin-top: 11%;
+}
+
+.title2 {
+    height: 84px;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 10.8254px;
+    color: #423A3A;
+    text-transform: uppercase;
+}
+
+.introduction {
+    width: 311px;
+    height: 88px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #CE9898;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.validation-form {
+    margin-left: 8%;
+    margin-top: 8%;
+}
+
+.email {
+    width: 250px;
+    height: 48px;
+    border: 1px solid #CE9898;
+    border-radius: 28px;
+    padding-left: 10%;
+    opacity: 0.5;
+    background: linear-gradient(150.03deg, #FFFFFF 0%, #FFF4F4 84.51%);
+}
+
+::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: #CE9898;
+    opacity: 0.8;
+}
+    
+.submit {
+    width: 64px;
+    height: 52px;
+    border: none;
+    position: absolute;
+    background: linear-gradient(135deg, #F8BFBF 0%, #EE8B8B 100%);
+    box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
+    border-radius: 28px;
+    transform: translateX(-70%);
+}
+
+.error-img {
+    display: none;
+    position: absolute;
+    margin-left: 13rem;
+    margin-top: -2.3rem;
+}
+
+.error {
+    width: 165px;
+    height: 13px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 13px;
+    color: #F96464; 
+    margin-top: 3%;
+    margin-left: 10%;
+    display: none;
+}
+
+/* For desktop: */
+
+@media screen and (min-width: 980px) {
+
+    body {
+        background: url(./images/bg-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: calc(60%); 
+    }
+
+    .mobile {
+        display: none;
+    }
+
+     .desktop {
+        display: block;
+        margin-left: 110%; 
+    }
+
+    .card-container {
+        display: flex;
+        width: 1495px;
+        height: 800px;
+        background: none;
+    }
+
+    .img-container {
+        display: flex;
+        width: 610px;
+        height: 800px;
+    } 
+   
+    .logo {
+        width: 158px;
+        height: 33px;
+        margin: 75px 0 0 55px;
+    }
+
+    .card-content {
+        width: 445px;
+        height: 404px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 180px;
+    }
+
+    .title1 {
+        font-size: 64px;
+        line-height: 64px;
+        letter-spacing: 18px;
+        text-align: left;
+    }
+
+    .title2 {
+        font-size: 64px;
+        line-height: 71px;
+        letter-spacing: 18px;
+        text-align: left;
+    }
+
+    .introduction {
+        font-size: 16px;
+        line-height: 28px;
+        text-align: left;
+        width: 444px;
+        height: 84px;
+        margin-left: -2px;
+        margin-top: 12%;
+    }
+
+    .validation-form {
+        width: 465px;
+        height: 56px;
+        margin-top: -210px;
+        margin-left: 30px;
+    }
+
+    .submit {
+        width: 85px;
+        height: 52px;
+        background: linear-gradient(135deg, #F8BFBF 0%, #EE8B8B 100%);
+        box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
+        border-radius: 28px;
+    }
+
+    .submit:hover {
+        cursor: pointer;
+        background: #F8BFBF;
+    }
+
+    .email {
+        width: 400px;
+        padding-left: 25px;
+        margin-left: 10px;
+    }
+
+    ::placeholder {
+        font-size: 16px;
+        line-height: 28px;
+        color: #CE9898;
+        mix-blend-mode: normal;
+        opacity: 0.8;
+    }
+
+    .error {
+        margin-left: 35px;
+        margin-top: 15px;
+    }
+
+    .error-img {
+        position: absolute; 
+        margin-left: 21rem;
+        margin-top: -2.2rem;
+    }
+
+
+}
